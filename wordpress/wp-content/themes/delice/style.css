@@ -7,3 +7,20 @@ Description: Mon premier thème !
 Requires at least: WordPress 5.0
 Version: 1.0
 */
+
+.svg-separator{
+    background: 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 45px;
+    z-index: 9;
+    -webkit-transform: translateY(-100%) translateY(2px);
+    transform: translateY(-100%) translateY(2px);
+    width: 100%;
+  }
+
+
+  .sep9 {
+    transform-origin: bottom;
+  }
