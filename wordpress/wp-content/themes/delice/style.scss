@@ -34,11 +34,6 @@ $pink: #FC88A1;
 $cookie: #FFF3C9;
 $blueSky: #A2DAE7;
 
-
-body{
-    
-    background-color: $cookie;
-
         header{
 
             background-color: $pink;
@@ -78,30 +73,31 @@ body{
     main{
         margin : 0 20%;
     }
-}
 
 
 
-footer{
+.colour-block{
     background-color: $pink;
 }
 
-// SEPARATEUR FOOTER
-.svg-separator-footer{
-    display: block;
-    background: 0 0;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 9;
-    -webkit-transform: translateY(-100%) translateY(2px);
-    width: 100%;
+
+
+
+  .scallop-down{
+    height:100px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from($pink), color-stop(0.49, $pink), color-stop(0.51, #fff), to(white));
+  -webkit-background-size: 49px 100%;
   }
-
-
-  .sep9 {
-    transform: translateY(0%) translateY(-2px) scale(-1,-1);
-    transform-origin: bottom;
+  
+  
+  /*----------------*/
+  /*  SCALLOP up    */
+  /*----------------*/
+  .scallop-up{
+    height:100px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from($pink), color-stop(0.49, $pink), color-stop(0.51, #fff), to(white));
+  -webkit-background-size: 49px 100%;
   }
-
+  
