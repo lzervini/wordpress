@@ -65,7 +65,7 @@ li a{
 
 
     main{
-        margin : 0 20%;
+        margin : 0 15%;
         background-color: white;
         
         h1, h2, h3, h4, h5, h6 {
@@ -73,10 +73,33 @@ li a{
             margin-bottom: 0;
         }
 
+        img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{
+            max-width: 100%;  
+            display: flex;
+            justify-content: center;
+        }
+
+        main, article, h2{
+            margin-bottom: 0.5rem;
+        }
+
+        article, div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        }
+
+    article.post::after {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 100%;
+        margin: 23px;
+        background-color: $cookie;
     }
-
-
-
+}
 .colour-block{
     background-color: $pink;
 }
