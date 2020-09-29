@@ -34,7 +34,6 @@ header div.bg-white {
   justify-content: center;
 }
 header img {
-  vertical-align: middle;
   border-style: none;
   max-width: 100%;
   height: auto;
@@ -77,10 +76,10 @@ main img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
   display: flex;
   justify-content: center;
 }
-main article, main h2 {
+main article > h2 {
   margin-bottom: 0.5rem;
 }
-main article, main div {
+main article > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,7 +95,6 @@ main article.post::after {
   background-color: #FFF3C9;
 }
 main .col-12 > img:nth-child(1) {
-  vertical-align: middle;
   border-style: none;
   max-width: 100%;
   height: auto;
@@ -114,6 +112,9 @@ main .post-categories > li {
   padding-top: 15px;
   text-align: center;
 }
+main .fg-simple_portfolio .fg-caption-title {
+  text-align: center;
+}
 
 main, #page404 {
   background: white;
@@ -123,13 +124,26 @@ main, .single {
   margin-top: 5%;
 }
 
-.colour-block {
-  background-color: #fc88a1;
-  padding: 10px;
-}
-
 img {
   max-width: 100%;
+}
+
+footer .colour-block {
+  background-color: #fc88a1;
+  font-family: "Athiti", sans-serif;
+  font-size: 15px;
+  padding: 20px;
+}
+footer .copyright {
+  color: white;
+}
+footer .copyright::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 10%;
+  background-color: black;
+  margin: 20px auto;
 }
 
 /*# sourceMappingURL=style.css.map */

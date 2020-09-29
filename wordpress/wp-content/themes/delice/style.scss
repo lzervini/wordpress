@@ -97,11 +97,11 @@ footer a{
             justify-content: center;
         }
 
-        article, h2{
+        article> h2{
             margin-bottom: 0.5rem;
         }
 
-        article, div {
+        article> div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -139,6 +139,11 @@ footer a{
             padding-top: 15px;
             text-align: center;
         }
+
+        .fg-simple_portfolio .fg-caption-title {
+            text-align: center;
+        }
+          
 }
 
 main,#page404{
@@ -149,30 +154,35 @@ main,.single{
     margin-top:5%;
 }
 
-.colour-block{
-    background-color: $pink;
-    font-family: 'Athiti', sans-serif;
-    font-size: 15px;
-    padding: 20px;
-}
 
 img{
     max-width: 100%;
 }
 
-.copyright{
-    color: white;
+footer{
+
+    .colour-block{
+        background-color: $pink;
+        font-family: 'Athiti', sans-serif;
+        font-size: 15px;
+        padding: 20px;
+    }
+    
+    .copyright{
+        color: white;
+    }
+    
+    .copyright::after{
+        content: "";
+        display: block;
+        height: 1px;
+        width: 10%;
+        background-color: black;
+        margin: 20px auto;
+    }
 }
 
-.copyright::after{
-    content: "";
-    display: block;
-    height: 1px;
-    width: 10%;
-    background-color: black;
-    margin: 20px auto;
-}
-  
+
         // /* SEPARATEUR */
         // .svg-separator-header{
         //     background: 0 0;

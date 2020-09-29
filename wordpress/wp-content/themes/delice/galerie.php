@@ -6,7 +6,7 @@
 	<main>
 		<div class=" policy text-justify align-items-start p-4">
 			<h1><?php the_title(); ?></h1>
-
+			<div><?php the_content("206") ?></div>
 		</div>
 	</main>
 	
