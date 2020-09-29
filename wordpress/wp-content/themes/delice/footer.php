@@ -2,7 +2,9 @@
 <?php wp_footer(); ?>
     <footer>
         <div class="colour-block">
-            <p class="text-center">Copyright 2020 - ZERVINI Léa</p>
+            <p class="text-center copyright">Copyright 2020 - ZERVINI Léa<br>
+            ACCESS CODE SCHOOL</p>
+            
         <div class="d-flex justify-content-between mx-5">
             <p> MENTIONS LEGALES</p>
             <p><a href="<?php echo get_permalink(get_page_by_title('Politique de confidentialité')); ?>">Politique de confidentialité</a></p></div>

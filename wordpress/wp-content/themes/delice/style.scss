@@ -154,13 +154,27 @@ main,.single{
 
 .colour-block{
     background-color: $pink;
-    padding: 10px;
+    font-family: 'Athiti', sans-serif;
+    font-size: 15px;
+    padding: 20px;
 }
 
 img{
     max-width: 100%;
 }
 
+.copyright{
+    color: white;
+}
+
+.copyright::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 10%;
+    background-color: black;
+    margin: 20px auto;
+}
   
         // /* SEPARATEUR */
         // .svg-separator-header{
