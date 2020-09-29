@@ -14,7 +14,7 @@
     <?php get_header(); ?>
     <main>
 
-        <div class=" policy text-justify align-items-start"><?php the_content(); ?></div>
+        <div class=" policy text-justify align-items-start p-4"><?php the_content(); ?></div>
 
 
     </main> 
