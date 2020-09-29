@@ -18,7 +18,6 @@ li a:hover {
 }
 
 footer a {
-  list-style: none;
   color: black;
 }
 footer a:hover {
@@ -58,11 +57,20 @@ header #menu-item-146 {
 }
 
 main {
+  font-family: "Athiti", sans-serif;
+  font-weight: 500;
   margin: 0 15%;
 }
 main h1, main h2, main h3, main h4, main h5, main h6 {
   margin-top: 0;
   margin-bottom: 0;
+}
+main a {
+  color: #fc88a1;
+}
+main a:hover {
+  color: #fc88a1;
+  font-weight: bold;
 }
 main img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
   max-width: 100%;
@@ -97,14 +105,31 @@ main .col-12 > img:nth-child(1) {
 main .policy, main h2, main h3 {
   margin-bottom: 1rem;
 }
+main ul.post-categories {
+  margin-top: 70px;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+main .post-categories > li {
+  padding-top: 15px;
+  text-align: center;
+}
 
 main, #page404 {
   background: white;
 }
 
+main, .single {
+  margin-top: 5%;
+}
+
 .colour-block {
   background-color: #fc88a1;
   padding: 10px;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

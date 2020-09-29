@@ -3,14 +3,13 @@
   Template Name: Galerie photos
 */
  get_header(); ?>
+	<main>
+		<div class=" policy text-justify align-items-start p-4">
+			<h1><?php the_title(); ?></h1>
 
-	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-    
-    	<h1><?php the_title(); ?></h1>
-    
-    	<?php the_content(); ?>
-
-	<?php endwhile; endif; ?>
+		</div>
+	</main>
+	
 	<div>
 		<svg id="" preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 200" style="display: block;" data-height="200">
 
