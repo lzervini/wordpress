@@ -13,7 +13,7 @@ Version: 1.0
 @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
 
 // VARIABLES
-$pink: #FC88A1;
+$pink: #fc88a1;
 $cookie: #FFF3C9;
 $blueSky: #A2DAE7;
 
@@ -46,13 +46,13 @@ li a{
             display: block;
         }
 
-        .row{
+        .row {
             display: flex;
             justify-content: center;
-            flex-direction: column;
-            position:relative;
-            }
-
+            flex-wrap: wrap;
+            margin-right: 0;
+            margin-left: 0;
+        }
 
             
         #menu-item-143,
@@ -66,7 +66,7 @@ li a{
 
     main{
         margin : 0 15%;
-        background-color: white;
+        
         
         h1, h2, h3, h4, h5, h6 {
             margin-top: 0;
@@ -99,10 +99,25 @@ li a{
         margin: 23px;
         background-color: $cookie;
     }
-}
+
+    .col-12 > img:nth-child(1) {
+        
+         vertical-align: middle;
+        border-style: none;
+        max-width: 100%;
+        height: auto;
+        display: block;
+       }
+    }
+
+    main,#page404{
+        background: white;
+    }
+
 .colour-block{
     background-color: $pink;
 }
+
 
 
 

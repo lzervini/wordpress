@@ -1,24 +1,31 @@
 <?php get_header(); ?>
- 	<h1>Archive</h1>
+<main>
+	<h2><?php the_category(); ?></h2>
 
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
   
 		<article class="post">
-			<h2><?php the_title(); ?></h2>
-      
-        	<?php the_post_thumbnail(); ?>
-            
-            <p class="post__meta">
-                Publié le <?php the_time( get_option( 'date_format' ) ); ?> 
-                par <?php the_author(); ?> • <?php comments_number(); ?>
-            </p>
-            
-      		<?php the_excerpt(); ?>
-              
-      		<p>
-                <a href="<?php the_permalink(); ?>" class="post__link">Lire la suite</a>
-            </p>
-		</article>
 
-	<?php endwhile; endif; ?>
+				<div class="">
+				<?php the_post_thumbnail(); ?>
+				<div class="text-justify">
+
+					<p class="post__meta text-center">
+						Publié le <?php the_time( get_option( 'date_format' ) ); ?> 
+						par <?php the_author(); ?> • <?php comments_number(); ?> <br> <?php the_category(' | '); ?>
+                    </div>
+					</p>
+				
+					  <?php the_excerpt(); ?>
+				  
+					  <p>
+						<a href="<?php the_permalink(); ?>" class="post__link">Lire la suite</a>
+					</p>
+				</div>
+			</div>
+
+			</article>
+			
+			<?php endwhile; endif; ?>
+		</main>
 <?php get_footer(); ?>

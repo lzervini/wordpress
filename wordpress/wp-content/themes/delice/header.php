@@ -36,7 +36,7 @@
                 );
             }
         ?>            
-<div class="scallop-down"></div>
+<!-- <div class="scallop-down"></div> -->
   </header>
 
     <?php wp_body_open(); ?>

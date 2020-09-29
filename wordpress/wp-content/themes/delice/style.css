@@ -8,79 +8,89 @@ Description: Mon premier thème !
 Requires at least: WordPress 5.0
 Version: 1.0
 */
-/*CSS RESET*/
-html, body, main, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 1rem;
-  vertical-align: baseline;
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap");
+li a {
+  list-style: none;
+  color: black;
+}
+li a:hover {
+  text-decoration: none;
 }
 
-body {
-  background-color: #FFF3C9;
+header {
+  background-color: #fc88a1;
+  font-family: "Athiti", sans-serif;
+  font-size: 24px;
 }
-body header {
-  background-color: #FC88A1;
-  /* SEPARATEUR */
-}
-body header .svg-separator-header {
-  background: 0 0;
-  position: relative;
-  left: 0;
-  right: 0;
-  z-index: 9;
-  width: 100%;
-}
-body header .row {
+header div.bg-white {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  position: relative;
 }
-body header #menu-menu-header {
-  list-style: none;
+header img {
+  vertical-align: middle;
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-body header #menu-item-143,
-body header #menu-item-144,
-body header #menu-item-145,
-body header #menu-item-146 {
+header .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+}
+header #menu-item-143,
+header #menu-item-144,
+header #menu-item-145,
+header #menu-item-146 {
   padding-right: 20px;
 }
-body main {
-  margin: 0 20%;
-}
 
-footer {
-  background-color: #FC88A1;
+main {
+  margin: 0 15%;
 }
-
-.svg-separator-footer {
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+main img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main main, main article, main h2 {
+  margin-bottom: 0.5rem;
+}
+main article, main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+main article.post::after {
+  content: "";
   display: block;
-  background: 0 0;
-  position: relative;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 9;
-  -webkit-transform: translateY(-100%) translateY(2px);
+  height: 5px;
   width: 100%;
+  margin: 23px;
+  background-color: #FFF3C9;
+}
+main .col-12 > img:nth-child(1) {
+  vertical-align: middle;
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.sep9 {
-  transform: translateY(0%) translateY(-2px) scale(-1, -1);
-  transform-origin: bottom;
+main, #page404 {
+  background: white;
+}
+
+.colour-block {
+  background-color: #fc88a1;
 }
 
 /*# sourceMappingURL=style.css.map */
