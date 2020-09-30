@@ -1,15 +1,17 @@
 <?php get_header(); ?>
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
         <main>
-          <div class=" policy p-4">
+          <section class=" policy p-4">
+            <h2 class="titre-h2-front-page">Les dernières recettes</h2>
               <div class="d-flex justify-content-between">
                 <?php
+                
                     $recentPosts = new WP_Query();
                     $recentPosts->query('showposts=3');
                     ?>
                 <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
                 <div class="card">
-                        <p class="text-center"><?php the_title() ?></p>
+                        <p class="text-center m-revert h-40"><?php the_title() ?></p>
                         <a href="<?php the_permalink(); ?>" class="card-img-top"><div class="text-center"><?php the_post_thumbnail('medium', ['class' => '', 'alt'=>'', 'style' => 'height : auto;']); ?></div></a>
                         <div class="card-body text-center">
                         <p>
@@ -20,8 +22,12 @@
                     </div>
                 <?php endwhile; ?>
             </div>
-            
-        </div>
+            <section>
+            <h2 class="titre-h2-front-page">Galerie Photos</h2>
+    <div class="row">
+    <?php echo do_shortcode('[foogallery id="206"]'); ?>
+    </div></section>
+        </section>
         </main>
         <?php endwhile; endif; ?>
   <div>
