@@ -27,3 +27,13 @@ function register_menu(){
 }
 add_action('init', 'register_menu');
 
+
+//Fomulaire de commentaires -
+
+// Supprimer le champ site web des commentaires
+add_filter('comment_form_default_fields','delete_url');
+
+function delete_url($fields) {
+    unset($fields['url']);
+    return $fields;
+}

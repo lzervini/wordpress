@@ -26,6 +26,7 @@
                     echo '<p>Aucun contenu trouvé</p>';
                 }
             ?>
+                  <?php comments_template(); // Par ici les commentaires ?>
     </div>
 </main>
 <div>
