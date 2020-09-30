@@ -9,11 +9,11 @@
                     ?>
                 <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
                 <div class="card">
-                        <p class="text-center"><?php the_title() ?></p>
+                        <p class="text-center m-revert h-40"><?php the_title() ?></p>
                         <a href="<?php the_permalink(); ?>" class="card-img-top"><div class="text-center"><?php the_post_thumbnail('medium', ['class' => '', 'alt'=>'', 'style' => 'height : auto;']); ?></div></a>
                         <div class="card-body text-center">
                         <p>
-          <a href="<?php the_permalink(); ?>" class="">Voir l'article</a>
+          <a href="<?php the_permalink(); ?>" class="">Voir l'article en entier ...</a>
         </p></div>
 				  
 
