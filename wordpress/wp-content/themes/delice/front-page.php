@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
         <main>
-          <section class=" policy p-4">
+          <div class=" policy p-4">
+            <section class="mb-50">
             <h2 class="titre-h2-front-page">Les dernières recettes</h2>
               <div class="d-flex justify-content-between">
                 <?php
@@ -22,12 +23,13 @@
                     </div>
                 <?php endwhile; ?>
             </div>
+</section>
             <section>
             <h2 class="titre-h2-front-page">Galerie Photos</h2>
     <div class="row">
     <?php echo do_shortcode('[foogallery id="206"]'); ?>
     </div></section>
-        </section>
+        </div>
         </main>
         <?php endwhile; endif; ?>
   <div>
