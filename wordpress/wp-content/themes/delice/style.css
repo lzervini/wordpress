@@ -115,6 +115,15 @@ main .post-categories > li {
 main .fg-simple_portfolio .fg-caption-title {
   text-align: center;
 }
+main .card {
+  max-width: 32%;
+}
+main .m-revert {
+  margin: revert;
+}
+main .h-40 {
+  height: 40px;
+}
 
 main, #page404 {
   background: white;
