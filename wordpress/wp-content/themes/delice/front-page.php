@@ -1,10 +1,27 @@
 <?php get_header(); ?>
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
         <main>
-          <div class=" policy text-justify align-items-start p-4">
-    	      <h1><?php the_title(); ?></h1>
-            <div><?php the_content(); ?></div>
-          </div>
+          <div class=" policy p-4">
+              <div class="d-flex justify-content-between">
+                <?php
+                    $recentPosts = new WP_Query();
+                    $recentPosts->query('showposts=3');
+                    ?>
+                <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
+                <div class="card">
+                        <p class="text-center"><?php the_title() ?></p>
+                        <a href="<?php the_permalink(); ?>" class="card-img-top"><div class="text-center"><?php the_post_thumbnail('medium', ['class' => '', 'alt'=>'', 'style' => 'height : auto;']); ?></div></a>
+                        <div class="card-body text-center">
+                        <p>
+          <a href="<?php the_permalink(); ?>" class="">Voir l'article</a>
+        </p></div>
+				  
+
+                    </div>
+                <?php endwhile; ?>
+            </div>
+            
+        </div>
         </main>
         <?php endwhile; endif; ?>
   <div>
